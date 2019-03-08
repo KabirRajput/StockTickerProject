@@ -3,6 +3,7 @@ import { Route, BrowserRouter as Router } from "react-router-dom";
 import "antd/dist/antd.css";
 import Login from "./components/Login";
 import axios from "axios";
+import RegisterForm from "./components/RegisterForm";
 import StockViewer from "./components/StockViewer";
 import StockViewerTopUp from "./components/StockViewerTopUp";
 
@@ -102,6 +103,10 @@ class App extends Component {
                 username={this.state.username}
               />
             )}
+          />
+          <Route
+            path="/register"
+            render={props => <RegisterForm {...props} />}
           />
         </div>
       </Router>

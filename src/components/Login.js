@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Alert, Col, Form, Icon, Input, Button, Row } from "antd";
 
 const Login = props => {
@@ -21,7 +22,7 @@ const Login = props => {
             <Button type="primary" htmlType="submit">
               Log in
             </Button>
-            Or <a href="">register now!</a>
+            Or <Link to="/register">register now!</Link>
           </Form.Item>
         </Form>
       </Col>
